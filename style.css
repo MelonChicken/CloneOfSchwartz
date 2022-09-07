@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Nothing+You+Could+Do&display=swap");
+body {
+  margin: 0;
+  font-family: "BenchNine", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionBox {
+  height: max-content;
+  margin: 0;
+  font-family: "BenchNine", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  height: 9vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0.2vh 5vh 0.3vh black;
+}
+
+.leftcontainer {
+  width: 23vw;
+  padding-left: 2vw;
+  font-family: "News Cycle", sans-serif;
+  font-size: 2.3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section {
+  margin-top: 7vh;
+  width: 84%;
+  height: max-content;
+  display: grid;
+  grid-template-rows: 93vh;
+  grid-auto-rows: minmax(93vh, max-content);
+}
+button {
+  margin-top: 1vw;
+  font-size: 2.3vw;
+  padding: 0.5vw;
+  border-radius: 8% / 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.thumbBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thumbBox .thumbText {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: bold;
+  padding-top: 0.1vw;
+  font-size: 4vw;
+}
+.thumbBox #nav {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  font-size: 2vw;
+}
+#contentBox {
+  grid-row: span 1;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.intro_content {
+  font-size: 3.5vw;
+}
+.intro_content span {
+  font-size: 3vw;
+  font-weight: bold;
+}
+.linkBox {
+  padding-left: 1vw;
+  font-size: 2.5vw;
+}
+.linkBox a:link,
+.linkBox a:visited {
+  color: black;
+  text-decoration: none;
+}
+.linkBox a:hover {
+  color: black;
+  padding-left: 1vw;
+  transition: linear 0.5s;
+  text-decoration: none;
+}
+.gridBox:not(:nth-child(4)) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(60vh, max-content);
+  grid-auto-rows: minmax(60vh, max-content);
+  grid-auto-columns: 1fr 1fr;
+  row-gap: 1px;
+  background-color: black;
+}
+.picBox,
+.explanation {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 1vw;
+  background-color: white;
+}
+.picBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explanation {
+  font-size: 2.5vw;
+}
+.name {
+  font-size: 3.5vw;
+  font-family: "Nothing You Could Do", cursive;
+}
+.picture {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.picBox:nth-child(1) .picture {
+  background-image: url(./imgs/img01.png);
+}
+.picBox:nth-child(4) .picture {
+  background-image: url(./imgs/img02.png);
+}
+.gridBox:nth-child(4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-auto-columns: 1fr 1fr;
+  row-gap: 1px;
+  background-color: black;
+  height: 100vh;
+  border-top: 1px solid black;
+}
+.giftBox {
+  grid-column: span 1;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.smallName {
+  font-size: 2.5vw;
+  font-family: "Nothing You Could Do", cursive;
+}
+.smallPic {
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.shortExplanation {
+  padding: 1vw;
+  font-size: 2vw;
+}
+#pic03 {
+  background-image: url(./imgs/img03.png);
+}
+#pic04 {
+  background-image: url(./imgs/img04.png);
+}
+.buttonBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ads {
+  grid-row: span 1;
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.ads span:nth-child(1),
+.ad span:nth-child(1) {
+  font-size: 2.2vw;
+  font-weight: bolder;
+}
+.ads span:nth-child(2),
+.ad span:nth-child(2) {
+  font-size: 3vw;
+  font-weight: lighter;
+}
+.ads button,
+.ad button {
+  width: max-content;
+}
+
+.adsBox {
+  width: 84%;
+  height: 40vh;
+  display: grid;
+  padding: 1vw;
+  column-gap: 3vw;
+  row-gap: 6vw;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+}
+
+.adsBox .ad {
+  grid-column: span 1;
+  grid-row: span 1;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vw;
+}
+.footer {
+  width: 98%;
+  height: 55vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  justify-content: space-between;
+  background-color: #464545;
+}
+.top {
+  width: 100%;
+  display: flex;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  justify-content: space-between;
+
+  color: white;
+  font-size: 3vw;
+}
+.bottom {
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1.4vw;
+}
+.bottom p {
+  height: max-content;
+}
